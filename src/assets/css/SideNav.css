@@ -1,6 +1,130 @@
 #side-nav {
+  --lft-padding: 2rem;
+  position: relative;
   grid-area: sidenav;
-  padding: 0 18px;
   background: #fff;
-  transition: padding .3s linear;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .05),
+              0 0 16px rgba(0, 0, 0, .05),
+              0 0 32px rgba(0, 0, 0, .05),
+              0 0 64px rgba(0, 0, 0, .05);
+  z-index: 99;
+}
+
+#side-nav .logo-area {
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  padding-left: var(--lft-padding);
+  display: flex;
+  align-items: center;
+}
+
+#side-nav .logo-area h2 {
+  color: var(--accent-blue);
+  font-weight: normal;
+  user-select: none;
+}
+
+#side-nav .user-details {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem var(--lft-padding);
+}
+
+#side-nav .user_avatar {
+  background: rgba(16, 156, 241, 0.1);
+  border: 5px solid rgba(16, 156, 241, 0.4);
+  color: var(--accent-blue);
+  border-radius: 100%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+}
+
+#side-nav .user-name_role {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#side-nav .user-name_role p:nth-child(1) {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+#side-nav .user-name_role p:nth-child(2) {
+  color: rgba(51, 77, 110, .3);
+}
+
+#side-nav nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: 0 var(--lft-padding);
+  margin-top: 1.5rem;
+}
+
+#side-nav nav .nav-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#side-nav nav a svg {
+  color: rgb(224, 224, 224);
+}
+
+#side-nav nav span {
+  font-weight: 600;
+  color: var(--dark-blue);
+  transition: 100ms ease-in;
+}
+
+#side-nav nav a:hover span {
+  color: var(--accent-blue);
+}
+
+#side-nav nav a.active {
+  border-right: 2px solid var(--accent-blue);
+}
+
+#side-nav nav a.active svg,
+#side-nav nav a.active span {
+  color: var(--accent-blue);
+}
+
+#side-nav .nav-sub_area {
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  padding: 1.5rem var(--lft-padding);
+  margin-top: 4rem;
+}
+
+#side-nav .nav-sub_area button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+#side-nav .nav-sub_area button svg {
+  color: rgb(224, 224, 224);
+}
+
+#side-nav .nav-sub_area button span {
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+#side-nav button.toggle-btn {
+  position: absolute;
+  bottom: 2rem;
+}
+
+#side-nav button.toggle-btn span {
+  font-weight: 600;
+  color: rgb(224, 224, 224);
 }
