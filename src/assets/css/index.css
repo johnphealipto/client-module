@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+
+html, body {
+  height: 100%;
+}
+
+body { 
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #F5F6F8;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3;
+}
+
+img, 
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, 
+button, 
+textarea, 
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+#page-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main";   
+}
+
+main {
+  grid-area: main;
+  overflow-y: scroll;
+}
+
+/* --- Other CSS Files --- */
+@import url(./Dashboard.css);
+@import url(./SideNav.css);
+@import url(./Header.css);

@@ -1,0 +1,6 @@
+#side-nav {
+  grid-area: sidenav;
+  padding: 0 18px;
+  background: #fff;
+  transition: padding .3s linear;
+}
