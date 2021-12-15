@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { BsSearch } from 'react-icons/bs';
 
 const Header = () => {
   return (
     <div id="header">
-      Header
+      <form>
+        <BsSearch />
+        <input type="text" placeholder="Search" />
+      </form>
+      <div className="user_avatar">
+        <p>pb</p>
+      </div>
     </div>
   )
 }

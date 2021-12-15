@@ -1,5 +1,52 @@
 #header {
   grid-area: header;
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, .05);
+  padding: 0 3rem;
+}
+
+#header form {
+  position: relative;
+}
+
+#header form svg {
+  color: rgb(204, 204, 204);
+  position: absolute;
+  top: 2px;
+}
+
+#header form input {
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+}
+
+#header form input::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+#header form input::-moz-placeholder {
+  color: rgb(204, 204, 204);
+}
+#header form input:-ms-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+#header form input:-moz-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+#header .user_avatar {
+  background: rgba(16, 156, 241, 0.1);
+  border: 4px solid rgba(16, 156, 241, 0.4);
+  color: var(--accent-blue);
+  border-radius: 100%;
+  user-select: none;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding: .25rem;
+  text-transform: uppercase;
 }

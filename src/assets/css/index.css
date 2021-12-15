@@ -56,7 +56,7 @@ a {
 
 main {
   grid-area: main;
-  padding: 2rem;
+  padding: 2rem 3rem;
   overflow-y: scroll;
 }
 
