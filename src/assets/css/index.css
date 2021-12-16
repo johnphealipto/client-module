@@ -14,6 +14,9 @@
 :root {
   --accent-blue: #109CF1;
   --dark-blue: #334D6E;
+  --filter-gray: #6A707E;
+  --green: #34C988;
+  --orange: #FF6F32;
 }
 
 html, body {
@@ -58,6 +61,10 @@ main {
   grid-area: main;
   padding: 2rem 3rem;
   overflow-y: scroll;
+}
+
+.page-title {
+  color: var(--filter-gray)
 }
 
 /* --- Other CSS Files --- */
