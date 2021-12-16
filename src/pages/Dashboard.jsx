@@ -4,6 +4,7 @@ import SideNav from '../components/SideNav';
 import { MdOutlineExitToApp } from 'react-icons/md';
 import { BsArrowUpRight, BsArrowDownRight, BsHandbag } from 'react-icons/bs';
 import { AiOutlineBook } from 'react-icons/ai';
+import Charts from '../components/Charts';
 
 const Dashboard = () => {
 
@@ -43,7 +44,6 @@ const Dashboard = () => {
 
         <div className="dashboard-content">
           <div className="analysis-cards">
-
             {analysis.map((item, index) => 
               <div key={index} className="analysis-card">
                 <div className="card-icon">
@@ -59,8 +59,8 @@ const Dashboard = () => {
                 <h2>{item.number}</h2>
               </div>
             )}
-
           </div>
+          <Charts />
         </div>
       </main>
     </div>

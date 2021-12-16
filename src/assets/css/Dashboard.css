@@ -19,6 +19,17 @@
               0 0 16px rgba(0, 0, 0, .05),
               0 0 32px rgba(0, 0, 0, .05),
               0 0 64px rgba(0, 0, 0, .05);
+  transform: scale(1);
+}
+
+@supports (transition: transition) {
+  #dashboard .analysis-card {
+    transition: transform 0.5s cubic-bezier(1, 0.18, 0.6, 1.1);
+  }
+}
+
+#dashboard .analysis-card:hover {
+  transform: scale(1.05);
 }
 
 #dashboard .card-icon {
@@ -68,4 +79,8 @@
 }
 #dashboard .analysis-card h2 {
   color: var(--dark-blue);
+}
+
+#dashboard .dashboard-charts {
+  /* width: 50vh; */
 }
