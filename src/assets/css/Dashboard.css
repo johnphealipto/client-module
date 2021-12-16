@@ -99,3 +99,50 @@
               0 0 32px rgba(0, 0, 0, .05),
               0 0 64px rgba(0, 0, 0, .05);
 }
+
+.bar-chart_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.bar-chart_header p {
+  color: var(--dark-blue);
+}
+
+.bar-chart_header .bar-select {
+  display: flex;
+  column-gap: .5rem;
+}
+
+.bar-chart_header select {
+  border: none;
+  outline: none;
+  color: var(--dark-blue);
+}
+
+.bar-chart_footer {
+  display: flex;
+  align-items: center;
+  column-gap: 1.25rem;
+  margin-top: .75rem;
+  margin-left: 1.35rem;
+}
+
+.bar-chart_footer div {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.bar-chart_footer div:nth-child(1) {
+  color: #CFEBFC;
+}
+.bar-chart_footer div:nth-child(2) {
+  color: #109CF1;
+}
+
+.bar-chart_footer div span {
+  color: #929292 !important;
+}
