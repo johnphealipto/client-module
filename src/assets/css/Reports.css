@@ -1,0 +1,128 @@
+#reports .nav-tabs {
+  background-color: #fff;
+  list-style: none;
+  width: fit-content;
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+#reports .nav-tabs li {
+  padding: .5rem 1rem;
+  color: #d8d8d8;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+}
+
+#reports .nav-tabs li.active {
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue);
+}
+
+#reports .search-area {
+  background-color: #fff;
+  padding: 1.5rem 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .05);
+}
+
+#reports .search-area form {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.25rem;
+}
+
+#reports .search-area .form-grp {
+  display: flex;
+  flex-direction: column;
+  row-gap: .25rem;
+  width: 100%;
+}
+
+#reports .search-area form label {
+  color: #8a8a8a;
+}
+
+#reports .search-area form input,
+#reports .search-area form select {
+  color: #888888;
+  border: none;
+  outline: 1px solid #d8d8d8;
+  padding: 0 1rem;
+  height: 2.65rem;
+  border-radius: 2px;
+}
+
+#reports .search-area .search-btn {
+  position: relative;
+  width: 20rem;
+}
+
+#reports .search-area button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .85rem 0;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: var(--accent-blue);
+  box-shadow: 0 0 4px rgba(16, 156, 241, .15),
+              0 0 16px rgba(16, 156, 241, .15),
+              0 0 32px rgba(16, 156, 241, .15);
+}
+
+#reports .search-area button:hover {
+  box-shadow: 0 0 4px rgba(16, 156, 241, .25),
+              0 0 16px rgba(16, 156, 241, .25),
+              0 0 32px rgba(16, 156, 241, .25);
+}
+
+#reports table {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 1.25rem;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .05);
+}
+
+#reports table th {
+  color: #a5a5a5;
+  font-weight: 500;
+}
+
+#reports table th,
+#reports table td {
+  text-align: left;
+  padding: .75rem .5rem;
+}
+
+#reports tbody tr {
+  border-top: 1px solid #f0f0f0;
+}
+
+#reports tbody tr td {
+  color: #707683;
+}
+
+#reports table .table-link {
+  background-color: rgba(16, 156, 241, .1);
+  color: var(--accent-blue);
+  padding: .25rem 1rem;
+  border-radius: 3px;
+  border: 2px solid var(--accent-blue);
+}
+
+#reports tbody tr td:nth-child(1) {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+@supports (transition: transition) {
+  #reports .nav-tabs li {
+    transition: 200ms ease-in-out;
+  }
+  #reports .search-area button {
+    transition: 200ms cubic-bezier(0.23, 1, 0.320, 1);
+  }
+}
