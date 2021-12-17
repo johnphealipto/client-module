@@ -4,17 +4,19 @@ import {
   CategoryScale,
   LinearScale,
   BarElement,
+  ArcElement,
   Title,
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
+import { Bar, Doughnut } from 'react-chartjs-2';
 import { FaDotCircle } from 'react-icons/fa';
 
 ChartJS.register(
   CategoryScale,
   LinearScale,
   BarElement,
+  ArcElement,
   Title,
   Tooltip,
   Legend
@@ -44,11 +46,26 @@ const Charts = () => {
       }
     ]
   }
-
+  
   const barOptions = {
     plugins: {
       legend: false,
     }
+  }
+
+  const doughnutData = {
+    labels: ['Paid', 'Unpaid', 'Overdue'],
+    datasets: [
+      {
+        label: 'Loan Status',
+        data: [40, 30, 30],
+        backgroundColor: [
+          '#34C988',
+          '#FBD437',
+          '#FF6F32'
+        ]
+      },
+    ],
   }
 
   return (
@@ -77,8 +94,11 @@ const Charts = () => {
           <div><FaDotCircle size={14} /> <span>Actual Repayment</span></div>
         </div>
       </div>
-      <div className="doughnut-chart">
-        Loan Status
+      <div className="dot-chart">
+        <div className="dot-chart_header">
+          <p>Loan Status</p>
+        </div>
+        <Doughnut data={doughnutData} />
       </div>
     </div>
   )

@@ -89,8 +89,7 @@
   margin-top: 1.5rem;
 }
 
-.dashboard-charts .bar-chart,
-.doughnut-chart {
+.dashboard-charts .bar-chart {
   background-color: #fff;
   border-radius: 5px;
   padding: 1.5rem 2rem;
@@ -145,4 +144,19 @@
 
 .bar-chart_footer div span {
   color: #929292 !important;
+}
+
+.dot-chart {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .05),
+              0 0 16px rgba(0, 0, 0, .05),
+              0 0 32px rgba(0, 0, 0, .05),
+              0 0 64px rgba(0, 0, 0, .05);
+}
+
+.dot-chart_header {
+  color: var(--dark-blue);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
