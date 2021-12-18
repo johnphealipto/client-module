@@ -95,6 +95,27 @@ tbody tr td {
   color: #707683;
 }
 
+.download-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1.25rem;
+}
+
+.download-btn button {
+  background-color: #01BC6A;
+  color: #fff;
+  padding: .75rem 1rem;
+  display: flex;
+  border-radius: 3px;
+  column-gap: 1rem;
+  border: none;
+  outline: 1px solid #01BC6A;
+  box-shadow: 0 0 4px rgba(1, 188, 106, .15),
+              0 0 16px rgba(1, 188, 106, .15),
+              0 0 32px rgba(1, 188, 106, .15);
+}
+
 /* --- Other CSS Files --- */
 @import url(./Dashboard.css);
 @import url(./SideNav.css);

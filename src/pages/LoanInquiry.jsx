@@ -4,6 +4,7 @@ import SideNav from '../components/SideNav';
 import { NavLink } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 import dp from '../assets/img/display-pics.jpg';
+import { BsDownload } from 'react-icons/bs';
 
 const LoanInquiry = () => {
   return (
@@ -105,6 +106,9 @@ const LoanInquiry = () => {
                 </tr>
               </tbody>
             </table>
+            <div className="download-btn">
+              <button><span>Download</span><BsDownload /></button>
+            </div>
           </div>
         </div>
       </main>

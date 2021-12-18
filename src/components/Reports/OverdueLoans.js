@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsDownload } from 'react-icons/bs';
 
 const OverdueLoans = () => {
   return (
@@ -93,6 +94,9 @@ const OverdueLoans = () => {
           </tr>
         </tbody>
       </table>
+      <div className="download-btn">
+        <button><span>Download</span><BsDownload /></button>
+      </div>
     </div>
   )
 }
