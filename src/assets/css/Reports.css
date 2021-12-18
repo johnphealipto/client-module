@@ -79,30 +79,8 @@
 }
 
 #reports table {
-  background-color: #fff;
-  width: 100%;
   margin-top: 1.25rem;
-  border-collapse: collapse;
   box-shadow: 0 0 5px rgba(0, 0, 0, .05);
-}
-
-#reports table th {
-  color: #a5a5a5;
-  font-weight: 500;
-}
-
-#reports table th,
-#reports table td {
-  text-align: left;
-  padding: .75rem .5rem;
-}
-
-#reports tbody tr {
-  border-top: 1px solid #f0f0f0;
-}
-
-#reports tbody tr td {
-  color: #707683;
 }
 
 #reports table .table-link {

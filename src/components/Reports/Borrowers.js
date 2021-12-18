@@ -30,7 +30,112 @@ const Borrowers = () => {
             <td>12-06-1983</td>
             <td>OYO</td>
             <td>
-              <NavLink to="/" className="table-link">
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
+                View
+              </NavLink>
+            </td>
+          </tr>
+          <tr>
+            <td>Lindsey&nbsp;Stroud</td>
+            <td>LN0001</td>
+            <td>600,000</td>
+            <td>14-10-2021</td>
+            <td>14-10-2021</td>
+            <td>No. 5 Alebiowu Street..</td>
+            <td>12-06-1983</td>
+            <td>OYO</td>
+            <td>
+              <NavLink to="/loan-inquiry/:id" className="table-link">
                 View
               </NavLink>
             </td>

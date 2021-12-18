@@ -64,7 +64,35 @@ main {
 }
 
 .page-title {
-  color: var(--filter-gray)
+  color: var(--filter-gray);
+}
+.page-title a {
+  color: rgb(167, 167, 167);
+}
+.page-title a:hover,
+.page-title a:focus {
+  color: var(--accent-blue);
+}
+
+table {
+  background-color: #fff;
+  width: 100%;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  text-align: left;
+  padding: .75rem 1rem;
+}
+table th {
+  color: #a5a5a5;
+  font-weight: 500;
+}
+tbody tr {
+  border-top: 1px solid #f0f0f0;
+}
+tbody tr td {
+  color: #707683;
 }
 
 /* --- Other CSS Files --- */
@@ -72,3 +100,4 @@ main {
 @import url(./SideNav.css);
 @import url(./Header.css);
 @import url(./Reports.css);
+@import url(./LoanInquiry.css);
