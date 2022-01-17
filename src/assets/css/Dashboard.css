@@ -93,6 +93,7 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 1.5rem 2rem;
+  overflow-x: auto;
   box-shadow: 0 0 4px rgba(0, 0, 0, .05),
               0 0 16px rgba(0, 0, 0, .05),
               0 0 32px rgba(0, 0, 0, .05),
@@ -149,6 +150,7 @@
 .dot-chart {
   background-color: #fff;
   border-radius: 5px;
+  overflow-x: auto;
   box-shadow: 0 0 4px rgba(0, 0, 0, .05),
               0 0 16px rgba(0, 0, 0, .05),
               0 0 32px rgba(0, 0, 0, .05),
@@ -159,4 +161,14 @@
   color: var(--dark-blue);
   padding: 1.5rem 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+
+/*** --- Devices (1087px) --- ***/
+@media only screen and (max-width: 1087px) { 
+  #dashboard .analysis-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
 }

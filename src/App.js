@@ -7,13 +7,20 @@ import LoanInquiry from './pages/LoanInquiry';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/loan-inquiry/:id" element={<LoanInquiry />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="lg-screen">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/loan-inquiry/:id" element={<LoanInquiry />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <div className="md-screen">
+        <div className="md-screen_container">
+          <p>Only available on desktop 😊</p>
+        </div>
+      </div>
     </div>
   );
 }
